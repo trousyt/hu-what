@@ -1,0 +1,66 @@
+
+body {
+  margin: 10px;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+// Responsive breaks
+
+// @mixin phone-up {
+//   @media only screen and (min-width: 640px) { @content; }
+// }
+
+// @mixin tablet-up {
+//   @media only screen and (min-width: 768px) { @content; }
+// }
+
+// @mixin desktop-up {
+//   @media only screen and (min-width: 1024px) { @content; }
+// }
+
+// @mixin desktop-wide-up {
+//   @media only screen and (min-width: 1200px) { @content; }
+// }
+
+// @mixin responsive-breakpoints {
+//   @include phone-up;
+//   @include tablet-up;
+//   @include desktop-up;
+//   @include desktop-wide-up;
+// }
+
+// /* Total col width = 7 */
+// mixin col-borders {
+//   padding-right: 10px;
+//   padding-left: 10px;
+// }
+
+// .col-7 {
+//   width: 100%;
+// }
+
+// .col-6 {
+//   width: 85.714%;
+// }
+
+// .col-5 {
+//   width: 71.428%;
+// }
+
+// .col-4 {
+//   width: 57.142%;
+// }
+
+// .col-3 {
+//   width: 42.857%;
+// }
+
+// .col-2 {
+//   width: 28.571%;
+// }
+
+// .col-1 {
+//   width: 14.285%;
+// }

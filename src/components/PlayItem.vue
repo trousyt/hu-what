@@ -5,9 +5,10 @@
         <span class="play-caption">
             {{ caption }}
         </span>
-        <!-- <img v-bind:src="imgSrc" 
-             v-bind:title="caption"
-             v-on:click="play" /> -->
+        <div class="play-overlay">
+        </div>
+        <audio v-bind:src="audioSrc" 
+               ref="audio" preload />
     </div>
 </template>
 
@@ -25,9 +26,7 @@
         },
         methods: {
             play: function() {
-                let audio = new Audio(this.audioSrc);
-                audio.play();
-                // TODO (trparkin): display play icon
+                this.$refs.audio.play();
             }
         },
         computed: {
@@ -53,7 +52,16 @@
         padding: 5px;
         text-overflow: ellipsis;
         color: white;
-        font-size: 14px;
-        background: rgba(0, 0, 0, .5);
+        font-size: .8rem;
+        background-color: rgba(0,0,0,.5);
+    }
+
+    .play-overlay {
+        background-color: rgba(0, 0, 0, 0, .5);
+        background-image: url(../assets/play-button.png);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        max-width: 100%;
+        max-height: 100%;
     }
 </style>
